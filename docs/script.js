@@ -4,10 +4,10 @@ const getExploitsButton = document.getElementById('get-exploits');
 
 // Add event listeners to the buttons
 getStartedButton.addEventListener('click', () => {
-	window.location.href = 'https://github.io/prakit1234/UTPALX/login/index.html';
+	window.location.href = 'https://prakit1234.github.io/UTPALX/';
 });
 
 getExploitsButton.addEventListener('click', () => {
-	window.location.href = 'https://github.io/prakit1234/UTPALX/login/index.html';
+	window.location.href = 'https://prakit1234.github.io/UTPALX/';
 });
 
