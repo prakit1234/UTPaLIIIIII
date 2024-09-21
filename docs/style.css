@@ -1,1 +1,52 @@
+/* Add some basic styling to make the buttons more attractive */
+.button {
+  background-color: #4CAF50; /* Green */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* Add some padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to a pointing hand */
+}
 
+.button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.button:active {
+  background-color: #3e8e41; /* Darker green on click */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Add some basic styling to the header and main sections */
+header {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center the title */
+}
+
+main {
+  display: flex; /* Use flexbox to center the content */
+  flex-direction: column; /* Stack the sections vertically */
+  align-items: center; /* Center the sections horizontally */
+  padding: 20px; /* Add some padding */
+}
+
+section {
+  background-color: #ffffff; /* White background */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #dddddd; /* Add a light gray border */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  margin-bottom: 20px; /* Add some margin between sections */
+}
+
+#title {
+  font-size: 36px; /* Increase the font size of the title */
+  font-weight: bold; /* Make the title bold */
+  margin-bottom: 10px; /* Add some margin between the title and description */
+}
+
+#description {
+  font-size: 18px; /* Increase the font size of the description */
+  color: #666666; /* Dark gray text */
+}
