@@ -5,7 +5,8 @@ body {
     font-family: 'Montserrat', sans-serif; /* Elegant and modern font */
     background: linear-gradient(135deg, #f8c3d4, #f4e5d4, #a3d5e7); /* Soft pastel gradient */
     color: #333333; /* Dark gray text for contrast */
-    /* Remove overflow: hidden to allow scrolling */
+    height: 100%; /* Ensure body takes full height */
+    overflow: auto; /* Allow scrolling */
 }
 
 /* Header */
@@ -37,6 +38,7 @@ section {
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
     margin-bottom: 25px;
+    width: 80%; /* Make sections take up 80% width */
 }
 
 #description {
