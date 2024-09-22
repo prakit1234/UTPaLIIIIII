@@ -5,7 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif; /* Elegant and modern font */
     background: linear-gradient(135deg, #f8c3d4, #f4e5d4, #a3d5e7); /* Soft pastel gradient */
     color: #333333; /* Dark gray text for contrast */
-    overflow: hidden; /* Hide scrollbars */
+    /* Remove overflow: hidden to allow scrolling */
 }
 
 /* Header */
