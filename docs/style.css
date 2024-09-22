@@ -1,52 +1,95 @@
-/* Add some basic styling to make the buttons more attractive */
-.button {
-  background-color: #4CAF50; /* Green */
-  color: #ffffff; /* White text */
-  padding: 10px 20px; /* Add some padding */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add rounded corners */
-  cursor: pointer; /* Change cursor to a pointing hand */
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Elegant and modern font */
+    background: linear-gradient(135deg, #f8c3d4, #f4e5d4, #a3d5e7); /* Soft pastel gradient */
+    color: #333333; /* Dark gray text for contrast */
+    overflow: hidden; /* Hide scrollbars */
 }
 
-.button:hover {
-  background-color: #3e8e41; /* Darker green on hover */
-}
-
-.button:active {
-  background-color: #3e8e41; /* Darker green on click */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-}
-
-/* Add some basic styling to the header and main sections */
+/* Header */
 header {
-  background-color: #f0f0f0; /* Light gray background */
-  padding: 20px; /* Add some padding */
-  text-align: center; /* Center the title */
-}
-
-main {
-  display: flex; /* Use flexbox to center the content */
-  flex-direction: column; /* Stack the sections vertically */
-  align-items: center; /* Center the sections horizontally */
-  padding: 20px; /* Add some padding */
-}
-
-section {
-  background-color: #ffffff; /* White background */
-  padding: 20px; /* Add some padding */
-  border: 1px solid #dddddd; /* Add a light gray border */
-  border-radius: 10px; /* Add rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
-  margin-bottom: 20px; /* Add some margin between sections */
+    text-align: center;
+    padding: 60px 0;
 }
 
 #title {
-  font-size: 36px; /* Increase the font size of the title */
-  font-weight: bold; /* Make the title bold */
-  margin-bottom: 10px; /* Add some margin between the title and description */
+    font-size: 50px;
+    color: #333333; /* Soft black */
+    letter-spacing: 3px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    animation: pulse 2.5s infinite ease-in-out; /* Soft pulsing animation */
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.6); /* Light, frosted glass effect */
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    margin-bottom: 25px;
 }
 
 #description {
-  font-size: 18px; /* Increase the font size of the description */
-  color: #666666; /* Dark gray text */
+    font-size: 22px;
+    color: #555555; /* Medium gray */
+    text-align: center;
+}
+
+#legal-info {
+    font-size: 14px;
+    color: #ff6b6b; /* Subtle red for warning text */
+    text-align: center;
+}
+
+/* Button Styles */
+.button {
+    background-color: #ffafbd; /* Soft pink */
+    color: #ffffff; /* White text */
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 18px;
+    margin: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 15px rgba(255, 175, 189, 0.4); /* Soft pink shadow */
+}
+
+.button:hover {
+    background-color: #ffc3a0; /* Light peach on hover */
+    transform: translateY(-3px) scale(1.05); /* Lift up on hover */
+    box-shadow: 0 10px 20px rgba(255, 175, 189, 0.5); /* Stronger shadow */
+}
+
+.button:active {
+    background-color: #ff8a8a; /* Slightly darker pink when clicked */
+    transform: translateY(1px); /* Press down */
+}
+
+/* Title Glow and Pulse Animation */
+@keyframes pulse {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+    50% { text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); }
+    100% { text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); }
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 768px) {
+    #title {
+        font-size: 40px;
+    }
+    .button {
+        padding: 10px 20px;
+    }
 }
